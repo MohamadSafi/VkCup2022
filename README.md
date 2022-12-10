@@ -9,18 +9,14 @@ The Zen mobile app shows users a feed of the most interesting posts. For first-t
 Below is a layout of the basic version of such a screen. Develop a single screen mobile application where the user can choose interesting topics. Layouts in Figma will help you navigate: https://vk.cc/cjh0Ho .
 
 ### ScreenShots
+   <p align="center">
+  <img src="./IMG/ZenLogo.jpg" alt="Size Limit CLI" width="250">
 
-   <p align="center">
-  <img src="./IMG/ZenLogo.jpg" alt="Size Limit CLI" width="250
-</p>
-   <p align="center">
-  <img src="./IMG/ZenStart.jpg" alt="Size Limit CLI" width="250
-</p>
-   <p align="center">
-  <img src="./IMG/ZenChecked.jpg" alt="Size Limit CLI" width="250
-</p>
-   <p align="center">
-  <img src="./IMG/ZenUnchecked.jpg" alt="Size Limit CLI" width="250
+  <img src="./IMG/ZenStart.jpg" alt="Size Limit CLI" width="250">
+
+  <img src="./IMG/ZenChecked.jpg" alt="Size Limit CLI" width="250">
+
 </p>
 
-
+## Second Round
+start: 4 January at 10:00
