@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отметьте то, что вам интересно,\nчтобы настроить Дзен"
+        android:textAlignment="viewStart"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Theme.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1F2225"
+        android:text="Позже"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#EDE8E8"
+        android:text="Продолжить"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chiGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="false"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:clickable="true"
+        app:chipSpacingHorizontal="7dp"
+        app:chipSpacingVertical="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.412"
+        app:singleLine="false"
+        app:singleSelection="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Юмор"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Еда"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кино"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рестораны"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прогулки"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Политика"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новости"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip11"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Автомобили"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip12"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сериалы"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip13"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рецепты"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip14"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Работа"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip15"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отдых"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip16"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Спорт"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip17"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Политика"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip18"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новости"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip19"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Юмор"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip20"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Еда"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip21"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кино"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip22"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рестораны"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip23"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прогулки"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip24"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Политика"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip25"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новости"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Юмор"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Еда"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            style="@style/CustomChipStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кино"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:chipIcon="@drawable/ic_baseline_add_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="#B7ACAC"
+            app:chipIconVisible="true" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
